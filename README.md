@@ -8,6 +8,8 @@
 - Login/Sign Up
     - Sign in / sign up form
     - redirect to browse page
+    - Header
+    - Login form
 
 - browse (after authentication)
     - Header
