@@ -10,6 +10,7 @@
     - redirect to browse page
     - Header
     - Login form
+    - signup form
 
 - browse (after authentication)
     - Header
