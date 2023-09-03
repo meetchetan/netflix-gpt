@@ -9,8 +9,11 @@
     - Sign in / sign up form
     - redirect to browse page
     - Header
+    - routing of app
     - Login form
     - signup form
+    - form valadation
+    - useref Hook
 
 - browse (after authentication)
     - Header
