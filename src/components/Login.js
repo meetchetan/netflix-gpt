@@ -12,6 +12,10 @@ const Login = () => {
   const [isSignInForm, setIsSignInFrom] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
 
+  const toggleSignInForm = () => {
+    setIsSignInFrom(!isSignInForm);
+  };
+
   const email = useRef(null);
   const password = useRef(null);
   const name = useRef(null);
@@ -30,8 +34,8 @@ const Login = () => {
     if (message) return;
 
     // sign in and sign up logic
+    // signUp logic
     if (!isSignInForm) {
-      // signUp logic
       createUserWithEmailAndPassword(
         auth,
         email.current?.value,
@@ -65,9 +69,6 @@ const Login = () => {
           setErrorMessage(error.code + ":" + error.message);
         });
     }
-  };
-  const toggleSignInForm = () => {
-    setIsSignInFrom(!isSignInForm);
   };
 
   return (
@@ -120,7 +121,7 @@ const Login = () => {
         <p className="py-4 cursor-pointer" onClick={toggleSignInForm}>
           {isSignInForm
             ? "New to Netflix Sign Up Now!"
-            : "Already registered Sign Up now"}
+            : "Already registered Sign In now"}
         </p>
       </form>
     </div>
